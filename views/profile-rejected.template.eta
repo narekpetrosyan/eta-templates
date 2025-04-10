@@ -1,0 +1,143 @@
+{{layout('./layout.eta')}}
+
+<table
+  border="0"
+  cellpadding="0"
+  cellspacing="0"
+  class="nl-container"
+  role="presentation"
+  style="mso-table-lspace: 0pt; height: 100%; mso-table-rspace: 0pt; background-color: #faf7f3; background-position: top center;"
+  width="100%"
+>
+  <tbody>
+    <tr>
+      <td>
+        <table
+          align="center"
+          border="0"
+          cellpadding="0"
+          cellspacing="0"
+          class="row row-1"
+          role="presentation"
+          style=" mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-position: top center; background-repeat: no-repeat; background-size: auto;"
+          width="100%"
+        >
+          <tbody>
+            <tr>
+              <td>
+                <table
+                  align="center"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  class="row-content stack blue-content"
+                  role="presentation"
+                  style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto; color: #000000; width: 100%; margin: 0 auto;"
+                  width="100%"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        class="column column-1"
+                        style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top;"
+                        width="100%"
+                      >
+                        <table
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          class="image_block block-2"
+                          role="presentation"
+                          style="mso-table-lspace: 0pt; mso-table-rspace: 0pt"
+                          width="100%"
+                        >
+                          <tr>
+                            <td
+                              class="pad"
+                              style="width: 100%; padding-right: 0px; padding-left: 0px"
+                            >
+                              <div
+                                align="center"
+                                class="alignment"
+                              >
+                                <div>
+                                  <h1
+                                    style="color: white; text-align: center; font-size: 43px; font-weight: 700; letter-spacing: normal; line-height: 1.2; mso-line-height-alt: 52px;"
+                                  >
+                                    {{=it.title}}
+                                  </h1>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table
+          align="center"
+          border="0"
+          cellpadding="0"
+          cellspacing="0"
+          class="row row-4"
+          role="presentation"
+          style="mso-table-lspace: 0pt; mso-table-rspace: 0pt"
+          width="100%"
+        >
+          <tbody>
+            <tr>
+              <td>
+                <table
+                  align="center"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  class="row-content stack"
+                  role="presentation"
+                  style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: white; color: #000000; margin: 0 auto;"
+                >
+                  <tbody>
+                    <tr>
+                      <td
+                        class="column column-1"
+                        style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-left: 15px; padding-right: 5px; vertical-align: top;"
+                        width="50%"
+                      >
+                        <table
+                          border="0"
+                          cellpadding="10"
+                          cellspacing="0"
+                          class="heading_block block-1 content"
+                          role="presentation"
+                          style="mso-table-lspace: 0pt; mso-table-rspace: 0pt"
+                          width="100%"
+                        >
+                          <tr>
+                            <td class="pad">
+                              <p
+                                style="color: #black; direction: ltr; font-size: 24px; font-weight: 600; letter-spacing: normal; line-height: 1.2; text-align: center; mso-line-height-alt: 52px;">
+                                {{ if (it.helperText) { }} {{= it.helperText}} {{ } else { }}
+                                <em>Aucune raison fournie</em>
+                                {{ } }}
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
