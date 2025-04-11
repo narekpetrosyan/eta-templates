@@ -6,7 +6,7 @@
   cellspacing="0"
   class="nl-container"
   role="presentation"
-  style="mso-table-lspace: 0pt;height: 100%;mso-table-rspace: 0pt;background-color: #faf7f3;background-position: top center;"
+  style="mso-table-lspace: 0pt;height: 100%;mso-table-rspace: 0pt;"
   width="100%"
 >
   <tbody>
@@ -47,10 +47,11 @@
                           cellspacing="0"
                           class="image_block block-2"
                           role="presentation"
-                          style="mso-table-lspace: 0pt; mso-table-rspace: 0pt"
+                          style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
                           width="100%"
                         >
-                          <tr>
+                          <tbody>
+                            <tr>
                             <td
                               class="pad"
                               style="width: 100%; padding-right: 0px; padding-left: 0px"
@@ -69,6 +70,7 @@
                               </div>
                             </td>
                           </tr>
+                          </tbody>
                         </table>
                       </td>
                     </tr>
@@ -78,7 +80,11 @@
             </tr>
           </tbody>
         </table>
+      </td>
+    </tr>
 
+    <tr>
+      <td style="padding: 0 10px;">
         <table
           align="center"
           border="0"
@@ -99,87 +105,187 @@
                   cellspacing="0"
                   class="row-content stack"
                   role="presentation"
-                  style="mso-table-lspace: 0pt;mso-table-rspace: 0pt; background: white;"
+                  style="mso-table-lspace: 0pt;mso-table-rspace: 0pt; background: white; padding: 20px;"
                 >
                   <tbody>
                     <tr>
-                      <td
-                        class="column column-1"
-                        style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;font-weight: 400;text-align: left;padding-bottom: 5px;padding-left: 15px;padding-right: 5px;padding-top: 25px;vertical-align: top;"
-                        width="50%"
+                      <table
+                        border="0"
+                        cellpadding="10"
+                        cellspacing="0"
+                        class="heading_block block-1 dashed-border"
+                        role="presentation"
+                        style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: 20px;"
+                        width="100%"
                       >
+                        <tr>
+                          <td class="pad" style="padding-bottom: 0;">
+                            <p
+                              style="margin: 0;color: black; direction: ltr;;font-size: 20px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: left;mso-line-height-alt: 52px;">
+                              Cher
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pad">
+                            <p
+                              style="margin: 0;color: black; direction: ltr;;font-size: 16px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: left;mso-line-height-alt: 52px;">
+                              {{=it.supportEmail}}
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </tr>
+
+                    <tr>
+                      <td>
                         <table
-                          border="0"
-                          cellpadding="10"
-                          cellspacing="0"
-                          class="heading_block block-1"
-                          role="presentation"
-                          style="mso-table-lspace: 0pt; mso-table-rspace: 0pt"
-                          width="100%"
-                        >
-                          <tr>
-                            <td class="pad">
-                              <p
-                                style="margin: 0;color: black; direction: ltr;;font-size: 24px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: center;mso-line-height-alt: 52px;">
-                                Cher {{=it.supportEmail}}
-                              </p>
-                            </td>
-                            <td class="pad">
-                              <p
-                                style="margin: 0;color: black; direction: ltr;;font-size: 24px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: center;mso-line-height-alt: 52px;">
-                                E-mail de l'utilisateur {{=it.email}}
-                              </p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="pad">
-                              <p
-                                style="margin: 0;color: black; direction: ltr;;font-size: 24px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: center;mso-line-height-alt: 52px;">
-                                Catégorie {{=it.category}}
-                              </p>
-                            </td>
-                            <td class="pad">
-                              <p
-                                style="margin: 0;color: black; direction: ltr;;font-size: 24px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: center;mso-line-height-alt: 52px;">
-                                Conductrice {{ if (it.isDriver) { }} Oui {{ } else { }} Non {{ } }}
-                              </p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="pad">
-                              <p
-                                style="margin: 0;color: black; direction: ltr;;font-size: 24px;font-weight: 600;letter-spacing: normal;line-height: 1.2; mso-line-height-alt: 52px; text-align: center;">
-                                Plateformes utilisées
-                              </p>
-                            </td>
-                          </tr>
-                          {{ it.platformUsed.forEach(platform => { }}
-                          <tr>
-                            <td class="pad">
-                              <p
-                                style="margin: 0;color: black; direction: ltr;;font-size: 16px;font-weight: 600;letter-spacing: normal;line-height: 1.2;mso-line-height-alt: 20px; text-align: center;">
-                                {{=platform}}
-                              </p>
-                            </td>
-                          </tr>
-                          {{ }) }}
-                          <tr>
-                            <td class="pad">
-                              <p
-                                style="margin: 0;color: black; direction: ltr;;font-size: 24px;font-weight: 600;letter-spacing: normal;line-height: 1.2;mso-line-height-alt: 52px; text-align: center;">
-                                Message
-                              </p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="pad">
-                              <p
-                                style="margin: 0;color: black; direction: ltr;;font-size: 16px;font-weight: 600;letter-spacing: normal;line-height: 1.2;mso-line-height-alt: 20px; text-align: center;">
-                                {{=it.message}}
-                              </p>
-                            </td>
-                          </tr>
-                        </table>
+                        border="0"
+                        cellpadding="10"
+                        cellspacing="0"
+                        class="heading_block block-1 dashed-border"
+                        role="presentation"
+                        style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: 20px;"
+                        width="100%"
+                      >
+                        <tr>
+                          <td class="pad" style="padding-bottom: 0;">
+                            <p
+                              style="margin: 0;color: black; direction: ltr;;font-size: 20px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: left;mso-line-height-alt: 52px;">
+                              E-mail de l'utilisateur
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pad">
+                            <p
+                              style="margin: 0;color: black; direction: ltr;;font-size: 16px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: left;mso-line-height-alt: 52px;">
+                              {{=it.email}}
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <table
+                        border="0"
+                        cellpadding="10"
+                        cellspacing="0"
+                        class="heading_block block-1 dashed-border"
+                        role="presentation"
+                        style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: 20px;"
+                        width="100%"
+                      >
+                        <tr>
+                          <td class="pad" style="padding-bottom: 0;">
+                            <p
+                              style="margin: 0;color: black; direction: ltr;;font-size: 20px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: left;mso-line-height-alt: 52px;">
+                              Catégorie
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pad">
+                            <p
+                              style="margin: 0;color: black; direction: ltr;;font-size: 16px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: left;mso-line-height-alt: 52px;">
+                              {{=it.category}}
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table
+                        border="0"
+                        cellpadding="10"
+                        cellspacing="0"
+                        class="heading_block block-1 dashed-border"
+                        role="presentation"
+                        style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: 20px;"
+                        width="100%"
+                      >
+                        <tr>
+                          <td class="pad" style="padding-bottom: 0;">
+                            <p
+                              style="margin: 0;color: black; direction: ltr;;font-size: 20px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: left;mso-line-height-alt: 52px;">
+                              Conductrice
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pad">
+                            <p
+                              style="margin: 0;color: black; direction: ltr;;font-size: 16px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: left;mso-line-height-alt: 52px;">
+                              {{ if (it.isDriver) { }} Oui {{ } else { }} Non {{ } }}
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table
+                        border="0"
+                        cellpadding="10"
+                        cellspacing="0"
+                        class="heading_block block-1 dashed-border"
+                        role="presentation"
+                        style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: 20px;"
+                        width="100%"
+                      >
+                        <tr>
+                          <td class="pad" style="padding-bottom: 0;">
+                            <p
+                              style="margin: 0;color: black; direction: ltr;;font-size: 20px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: left;mso-line-height-alt: 52px;">
+                               Plateformes utilisées
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pad">
+                            <p
+                              style="margin: 0;color: black; direction: ltr;;font-size: 16px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: left;mso-line-height-alt: 52px;">
+                              {{= it.platformUsed.join(", ") }}
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table
+                        border="0"
+                        cellpadding="10"
+                        cellspacing="0"
+                        class="heading_block block-1 dashed-border"
+                        role="presentation"
+                        style="mso-table-lspace: 0pt; mso-table-rspace: 0pt"
+                        width="100%"
+                      >
+                        <tr>
+                          <td class="pad" style="padding-bottom: 0;">
+                            <p
+                              style="margin: 0;color: black; direction: ltr;;font-size: 20px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: left;mso-line-height-alt: 52px;">
+                              Message
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pad">
+                            <p
+                              style="margin: 0;color: black; direction: ltr;;font-size: 16px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: left;mso-line-height-alt: 52px;">
+                              {{=it.message}}
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
                       </td>
                     </tr>
                   </tbody>

@@ -35,6 +35,25 @@
         padding: 0;
       }
 
+      .dashed-border {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        background-color:rgba(203, 224, 255, 0.3);
+      }
+
+      .dashed-border::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        background: repeating-linear-gradient(to bottom, #4b91f7 0, #4b91f7 10px, #0d47a1 10px, #0d47a1 20px);
+      }
+
       .logo-header {
         display: flex;
         align-items: center;
@@ -115,6 +134,13 @@
       }
 
       @media (max-width:700px) {
+        .content {
+          padding: 12px 0;
+        }
+
+        .blue-content {
+          padding: 12px 0;
+        }
 
         .desktop_hide table.icons-inner,
         .row-17 .column-1 .block-3.button_block .alignment .button,

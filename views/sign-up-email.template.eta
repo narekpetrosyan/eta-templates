@@ -30,10 +30,9 @@
                   border="0"
                   cellpadding="0"
                   cellspacing="0"
-                  class="row-content stack"
+                  class="row-content stack blue-content"
                   role="presentation"
-                  style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-size: auto;color: #000000;width: 680px;margin: 0 auto;"
-                  width="680"
+                  style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-size: auto;width: 100%;margin: 0 auto;"
                 >
                   <tbody>
                     <tr>
@@ -42,33 +41,18 @@
                         style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;font-weight: 400;text-align: left;padding-bottom: 5px;padding-top: 5px;vertical-align: top;"
                         width="100%"
                       >
-                        <table
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          class="image_block block-2"
-                          role="presentation"
-                          style="mso-table-lspace: 0pt; mso-table-rspace: 0pt"
-                          width="100%"
+                        <div
+                          align="center"
+                          class="alignment"
                         >
-                          <tr>
-                            <td
-                              class="pad"
-                              style="width: 100%; padding-right: 0px; padding-left: 0px"
+                          <div>
+                            <h1
+                              style="text-align: center;margin: 0;;font-size: 43px;font-weight: 700;letter-spacing: normal;line-height: 1.2;margin-top: 0;margin-bottom: 0;mso-line-height-alt: 52px;"
                             >
-                              <div
-                                align="center"
-                                class="alignment"
-                              >
-                                <div>
-                                  <h1 style="text-align: center;margin: 0;color: black;font-family:Inter,Lucida Sans Unicode,Lucida Grande,sans-serif;font-size: 43px;font-weight: 700;letter-spacing: normal;line-height: 1.2;margin-top: 0;margin-bottom: 0;mso-line-height-alt: 52px;">
-                                    Bienvenue sur l'application !
-                                  </h1>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                        </table>
+                              Bienvenue sur l'application !
+                            </h1>
+                          </div>
+                        </div>
                       </td>
                     </tr>
                   </tbody>
@@ -77,7 +61,11 @@
             </tr>
           </tbody>
         </table>
+      </td>
+    </tr>
 
+    <tr>
+      <td>
         <table
           align="center"
           border="0"
@@ -96,17 +84,15 @@
                   border="0"
                   cellpadding="0"
                   cellspacing="0"
-                  class="row-content stack"
+                  class="row-content stack content"
                   role="presentation"
-                  style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-color: #0f0f0f;border-radius: 20px;color: #000000;width: 680px;margin: 0 auto;"
-                  width="680"
+                  style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-radius: 20px;color: #fff;width: 100%;margin: 0 auto;"
                 >
                   <tbody>
                     <tr>
                       <td
                         class="column column-1"
                         style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;font-weight: 400;text-align: left;padding-bottom: 5px;padding-left: 15px;padding-right: 5px;padding-top: 25px;vertical-align: top;"
-                        width="50%"
                       >
                         <table
                           border="0"
@@ -119,7 +105,8 @@
                         >
                           <tr>
                             <td class="pad">
-                              <p style="margin: 0;color: #ffffff;direction: ltr;font-family:Inter,Lucida Sans Unicode,Lucida Grande,sans-serif;font-size: 24px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: center;margin-top: 0;margin-bottom: 0;mso-line-height-alt: 52px;">
+                              <p
+                                style="margin: 0;color: #000;direction: ltr;;font-size: 24px;font-weight: 600;letter-spacing: normal;line-height: 1.2;text-align: center;margin-top: 0;margin-bottom: 0;mso-line-height-alt: 52px;">
                                 Pour vérifier votre adresse e-mail, cliquez
                               </p>
                             </td>
